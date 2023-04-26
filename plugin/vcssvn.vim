@@ -277,7 +277,7 @@ function! s:svnFunctions.Update(argList)
 endfunction
 
 " Annotate setting {{{2
-let s:svnFunctions.AnnotateSplitRegex = '\s\+\S\+\s\+\S\+ '
+let s:svnFunctions.AnnotateSplitRegex = '\s*\S\+\s\+\S\+ '
 
 " Section: Plugin Registration {{{1
 let s:VCSCommandUtility = VCSCommandRegisterModule('SVN', expand('<sfile>'), s:svnFunctions, [])
